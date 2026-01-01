@@ -5,7 +5,7 @@ import { ShoppingCart } from "lucide-react";
 
 // import { useCart } from "../context/CartContext";
 
-const ProductCart = ({product}) => {
+const ProductCard = ({product}) => {
   // const { addToCart } = useCart();
   return (
     <>
@@ -52,4 +52,4 @@ const ProductCart = ({product}) => {
   )
 }
 
-export default ProductCart
+export default ProductCard
