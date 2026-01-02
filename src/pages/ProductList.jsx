@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import SearchFilter from "../components/SearchFilter";
 import CategoryFilter from "../components/CategoryFilter";
-import { cartcontext } from "../context/CartContext";
+import { useCart } from "../context/CartContext";
 import ProductCard from "../components/ProductCard";
 const ProductList = () => {
-  const products = useContext(cartcontext);
+  const {products} = useCart();
   console.log(products);
   const renderproduct = products.map((product,idx) => {
     return <ProductCard key={idx} product={product} />
