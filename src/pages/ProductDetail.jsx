@@ -24,7 +24,7 @@ const ProductDetail = () => {
     <>
       <div className="container mx-auto px-4 md:px-8 bg-gray-900 min-h-screen rounded-2xl shadow-2xl my-8 p-6 md:p-12 border border-gray-800">
         <Link to={"/"}>
-          <button className="cursor-pointer flex items-center text-gray-400 hover:text-orange-400 transition duration-150 mb-12 font-semibold text-lg">
+          <button className="cursor-pointer flex items-center text-gray-400 hover:text-green-400 transition duration-150 mb-12 font-semibold text-lg">
             <ChevronLeft className="w-6 h-6 mr-1" />
             <span>Back to All Products</span>
           </button>
@@ -45,30 +45,30 @@ const ProductDetail = () => {
                 {product?.name}
               </h1>
             </div>
-            <p className="text-3xl font-extrabold text-orange-400 mb-4">
+            <p className="text-3xl font-extrabold text-green-400 mb-4">
               ₹{product?.price.toFixed(2)}
             </p>
 
-            <h2 className="text-xl font-bold text-gray-200 mb-2 border-b border-e-orange-900/50 pb-2 flex items-center space-x-2">
-              <Tag className="w-5 h-5 text-orange-500" />
+            <h2 className="text-xl font-bold text-gray-200 mb-2 border-b border-e-green-900/50 pb-2 flex items-center space-x-2">
+              <Tag className="w-5 h-5 text-green-500" />
               <span>Product Overview</span>
             </h2>
 
-            <p className="text-gray-500 text-lg leading-relaxed mb-3">
+            <p className="text-stone-200 text-lg leading-relaxed mb-3">
               {product?.description}
             </p>
 
             <ul className="space-y-3 text-gray-300 p-4 bg-gray-800 rounded-xl border border-gray-700">
               <li className="flex items-center space-x-3 text-lg">
-                <Zap className="w-5 h-5 text-orange-500" />
+                <Zap className="w-5 h-5 text-green-500" />
                 <span>High-Quality, Professional Grade Materials</span>
               </li>
               <li className="flex items-center space-x-3 text-lg">
-                <Zap className="w-5 h-5 text-orange-500" />
+                <Zap className="w-5 h-5 text-green-500" />
                 <span>Comprehensive 1-Year Manufacturer Warranty</span>
               </li>
               <li className="flex items-center space-x-3 text-lg">
-                <Zap className="w-5 h-5 text-orange-500" />
+                <Zap className="w-5 h-5 text-green-500" />
                 <span>Immediate Shipping for In-Stock Items</span>
               </li>
             </ul>
@@ -76,7 +76,7 @@ const ProductDetail = () => {
             <div className="mt-5 space-y-4 flex justify-center items-center flex-col">
               <button
                 onClick={() => addToCart(product)}
-                className="w-full py-3 bg-orange-600 text-white font-bold rounded-full shadow-lg shadow-orange-800/50 cursor-pointer hover:bg-orange-700 transition duration-300 flex items-center justify-center space-x-2 transform hover:ring-4 hover:ring-pink-600/50 uppercase tracking-wider"
+                className="w-full py-3 bg-green-600 text-white font-bold rounded-full shadow-lg shadow-green-800/50 cursor-pointer hover:bg-green-700 transition duration-300 flex items-center justify-center space-x-2 transform hover:ring-4 hover:ring-green-600/50 uppercase tracking-wider"
               >
                 <ShoppingCart className="w-6 h-6" />
                 <span>Add to Cart</span>
@@ -84,7 +84,7 @@ const ProductDetail = () => {
 
               <Link
                 to={"/"}
-                className="w-full py-3 border-2 border-orange-600 text-orange-400 font-bold rounded-full cursor-pointer hover:bg-orange-900/50 transition duration-300 uppercase tracking-wider text-center"
+                className="w-full py-3 border-2 border-green-600 text-green-400 font-bold rounded-full cursor-pointer hover:bg-green-900/50 transition duration-300 uppercase tracking-wider text-center"
               >
                 Keep Shopping
               </Link>
