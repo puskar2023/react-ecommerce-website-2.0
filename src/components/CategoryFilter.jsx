@@ -13,7 +13,7 @@ const CategoryFilter = ({selectedCategory, setSelectedCategory}) => {
  
   return (
     <>
-      <div className="flex flex-wrap gap-3 border-b border-stone-500 pb-6">
+      <div className="flex flex-wrap gap-3 border-b border-purple-300 pb-6">
         <Tag className="w-5 h-5 text-green-500 mt-2 mr-2 hidden sm:block" />
         {availableCategories.map((category) => (
           <button
@@ -22,7 +22,7 @@ const CategoryFilter = ({selectedCategory, setSelectedCategory}) => {
             className={`px-5 py-2 text-sm font-bold rounded-full transition duration-200 shadow-md ${
               selectedCategory === category
                 ? "bg-[#712b8c] text-green-300 shadow-green-800/50"
-                : "bg-gray-700 text-green-300 hover:bg-green-400 hover:text-[#712b8c] border border-stone-700"
+                : "bg-gray-700 text-green-300 hover:bg-gray-600/50 hover:text-[#fff0db] border border-stone-700"
             }`}
           >
             {category}
