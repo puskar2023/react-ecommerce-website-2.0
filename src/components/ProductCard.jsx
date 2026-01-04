@@ -42,7 +42,7 @@ const ProductCard = ({product}) => {
 
           <button
           onClick={()=>addToCart(product)}
-           className="mx-auto w-full py-3 bg-gradient-to-r from-[#370f42] to-[#c800ff] text-[#EDE8D0] font-bold rounded-full shadow-lg shadow-green-800/50 cursor-pointer hover:bg-green-700 transition duration-300 flex items-center justify-center space-x-2 transform hover:ring-4 hover:ring-pink-600/50 uppercase tracking-wider">
+           className="mx-auto w-full py-3 bg-gradient-to-r from-[#370f42] to-[#c800ff] text-[#EDE8D0] font-bold rounded-full shadow-lg shadow-green-800/50 cursor-pointer hover:bg-green-700 transition duration-300 flex items-center justify-center space-x-2 transform hover:ring-2 hover:ring-violet-300/50 uppercase tracking-wider">
             <ShoppingCart className="w-5 h-5" />
             <span>Add to Cart</span>
           </button>

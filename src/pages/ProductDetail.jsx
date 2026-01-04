@@ -41,7 +41,7 @@ const ProductDetail = () => {
 
           <div className="flex flex-col justify-between">
             <div>
-              <h1 className="text-4xl font-extrabold text-white mb-4 leading-tight tracking-tighter">
+              <h1 className="text-4xl font-extrabold bg-gradient-to-r from-[#c800ff] to-[#fff0db] bg-clip-text text-transparent mb-4 leading-tight">
                 {product?.name}
               </h1>
             </div>
@@ -76,7 +76,7 @@ const ProductDetail = () => {
             <div className="mt-5 space-y-4 flex justify-center items-center flex-col">
               <button
                 onClick={() => addToCart(product)}
-                className="w-full py-3 bg-green-600 text-white font-bold rounded-full shadow-lg shadow-green-800/50 cursor-pointer hover:bg-green-700 transition duration-300 flex items-center justify-center space-x-2 transform hover:ring-4 hover:ring-green-600/50 uppercase tracking-wider"
+                className="w-full py-3 bg-gradient-to-r from-[#370f42] to-[#c800ff] text-white font-bold rounded-full shadow-lg shadow-green-800/50 cursor-pointer hover:bg-green-700 transition duration-300 flex items-center justify-center space-x-2 transform hover:ring-2 hover:ring-violet-300/50 uppercase tracking-wider"
               >
                 <ShoppingCart className="w-6 h-6" />
                 <span>Add to Cart</span>
@@ -84,7 +84,7 @@ const ProductDetail = () => {
 
               <Link
                 to={"/"}
-                className="w-full py-3 border-2 border-green-600 text-green-400 font-bold rounded-full cursor-pointer hover:bg-green-900/50 transition duration-300 uppercase tracking-wider text-center"
+                className="w-full py-3 border-2 border-[#cf6ef5] text-[#cf6ef5] font-bold rounded-full cursor-pointer hover:bg-purple-800/20 transition duration-300 uppercase tracking-wider text-center"
               >
                 Keep Shopping
               </Link>
