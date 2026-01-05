@@ -21,7 +21,7 @@ const Cart = () => {
           </Link>
         </div>
 
-        <h2 className="text-4xl font-extrabold bg-gradient-to-r from-[#c800ff] to-orange-500 bg-clip-text text-transparent mb-15 tracking-tight">
+        <h2 className="text-4xl font-extrabold bg-gradient-to-tr from-[#c800ff] to-purple-300 bg-clip-text text-transparent mb-15 tracking-tight">
           Shopping Cart ({cartCount})
         </h2>
 
