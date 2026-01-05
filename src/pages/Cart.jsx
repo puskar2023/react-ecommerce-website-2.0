@@ -62,7 +62,7 @@ const Cart = () => {
 
             <Link
               to={"/checkout"}
-              className="w-full mt-8 py-4 bg-green-600 text-white font-extrabold text-xl rounded-full shadow-lg shadow-green-800/50 cursor-pointer hover:bg-green-700 transition duration-300 flex items-center justify-center space-x-2 transform hover:ring-4 hover:ring-pink-600/50 uppercase tracking-wider"
+              className="w-full mt-8 py-4 bg-green-600 text-white font-extrabold text-xl rounded-full shadow-lg shadow-green-800/50 cursor-pointer hover:bg-green-700 transition duration-300 flex items-center justify-center space-x-2 transform hover:ring-2 hover:ring-green-300 uppercase tracking-wider"
             >
               <Zap className="w-6 h-6" />
               <span>Proceed Securely</span>
